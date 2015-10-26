@@ -1,29 +1,6 @@
-# Isomorphic Redux App
+# Portfolio Redux App
 
-This project serves as a **simple** boilerplate to start building an isomorphic rendering application in React and Redux.
-
-<img src="http://g.recordit.co/iChc7ZH3H1.gif" width="728" />
-
-# Features
-
-- Async server-side rendering
-- Hot reloading middleware
-- Redux DevTools and Logging
-- Redux Routing
-- Reddit API example
-- Counter example
-- Todo example
-- Static content example
-
-## Stack
-
-- React.js
-- React-router
-- Webpack
-- Express
-- Redux
-- Redux-DevTools
-- Babel
+A Portfolio example of an isomorphic rendering application in React and Redux.
 
 ## Development Installation
 
