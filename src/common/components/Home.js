@@ -68,7 +68,7 @@ class Home extends Component {
 
 				<div className="exclaimation">
 					<em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/caljrimmer/portfolio-redux-app">github repo here</a>.</em><br/>
-					<em><b>**</b> Yep I know React can be used on the server side to. This site is also Isomorphical rendered.</em>
+					<em><b>**</b> Yep, I know React can be used on the server side too. This site is Isomorphical rendered.</em>
 				</div>
 
   			</div>

@@ -73,7 +73,6 @@ ul.clients li.shipserv-logo {
 
 .posts em b {
    font-weight:bold;
-   color:#98f44e;
    margin-right:5px;
    margin-left:-5px;
    text-shadow:1px 1px 1px #666;
@@ -104,12 +103,12 @@ ul.clients li.shipserv-logo {
    margin:0.2em;
    clear:both; 
    font-style:normal; 
-   box-shadow:1px 1px 1px #76d5cc;
+   box-shadow:1px 1px 1px #ccc;
 }
 
 .skill-item ul ul li em {
-   background:#76d5cc;
-   border: 1px solid #1db7a9;
+   background: #d9ead3;
+   color: #1db7a9;
 }
 
 .exclaimation {
