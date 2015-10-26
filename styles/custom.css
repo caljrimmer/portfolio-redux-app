@@ -1,0 +1,118 @@
+.sidebar-item p b {
+   color:#fff;
+}
+
+
+/**
+* Clients on Home Page
+*/
+
+ul.clients {
+   margin:0;
+   padding:0;
+}
+
+ul.clients li {
+   list-style:none;
+   float:left;
+   margin:1em 1.6em 1em 0em;
+   height:70px;
+   text-indent:-5000px;
+   box-shadow:1px 1px 1px #ccc;
+}
+
+ul.clients li.goldmans-logo {
+   background: url('assets/goldmans-logo.jpg') no-repeat;
+   width:124px;
+}
+
+ul.clients li.orange-logo {
+   background: url('assets/orange-logo.jpg') no-repeat;
+   width:70px;
+}
+
+ul.clients li.tesco-logo {
+   background: url('assets/tesco-logo.jpg') no-repeat;
+   width:181px;
+}
+
+ul.clients li.timeout-logo {
+   background: url('assets/timeout-logo.jpg') no-repeat;
+   width:151px;
+}
+
+ul.clients li.wiley-logo {
+   background: url('assets/wiley-logo.jpg') no-repeat;
+   width:169px;
+}
+
+ul.clients li.covestor-logo {
+   background: url('assets/covestor-logo.jpg') no-repeat;
+   width:218px;
+}
+
+ul.clients li.shipserv-logo {
+   background: url('assets/shipserv-logo.jpg') no-repeat;
+   width:218px;
+}
+
+/**
+* Skill Boxes on Home Page
+*/
+
+.skill-item {
+   float:left;
+   margin: 0 3.5em 2em 0;
+   font-size:0.8em;
+}
+
+.skill-item h4 {
+   font-size:20px;
+   font-weight:bold;
+}
+
+.posts em b {
+   font-weight:bold;
+   color:#98f44e;
+   margin-right:5px;
+   margin-left:-5px;
+   text-shadow:1px 1px 1px #666;
+}
+
+.skill-item ul{
+   list-style:none;
+   padding-left:0;
+   font-size:16px;
+}
+
+.skill-item ul li {
+   display:inline-block;
+   float:left;
+   clear:both;
+}
+
+.skill-item ul ul {
+   padding-left:2em;
+}
+
+.skill-item ul li em {
+   background: #1db7a9;
+   display:inline-block;
+   float:left;
+   color:#fff;
+   padding:0.2em 1em 0.2em;
+   margin:0.2em;
+   clear:both; 
+   font-style:normal; 
+   box-shadow:1px 1px 1px #76d5cc;
+}
+
+.skill-item ul ul li em {
+   background:#76d5cc;
+   border: 1px solid #1db7a9;
+}
+
+.exclaimation {
+   clear:both;
+   font-size:14px;
+}
