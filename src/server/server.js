@@ -21,6 +21,7 @@ const renderFullPage = (html, initialState) => {
     <!doctype html>
     <html>
       <head>
+        <meta charset="utf-8">
         <title>Full Stack Web Developer based in London</title>
       </head>
       <body>
