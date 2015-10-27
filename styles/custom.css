@@ -157,3 +157,23 @@ ul.clients li.shipserv-logo {
    clear:both;
    font-size:14px;
 }
+
+/**
+* Banner
+*/
+
+.contact-banner {
+  background:#1db7a9;
+  color:#d9ead3;
+  text-align:center;
+}
+
+.contact-banner p {
+  padding:20px;
+}
+
+.contact-banner p em {
+    color:#fff;
+    font-weight:bold;
+    font-style:normal;
+}

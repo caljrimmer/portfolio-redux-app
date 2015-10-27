@@ -1,0 +1,9 @@
+.services {
+	width:46%;
+	float:left;
+	font-size:16px;
+}
+
+.services:last-child{
+	float:right;
+}

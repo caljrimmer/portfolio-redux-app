@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
+import Banner from './layout/Banner';
 
 class Home extends Component {
 
+  constructor(props){
+    super(props);
+    this.eventToggleSidebar = this.eventToggleSidebar.bind(this)
+  }
+
+  eventToggleSidebar(e) {
+    e.preventDefault();
+    this.props.toggleSidebar(!this.props.layout.sidebarOpen);
+  }
+
   render() {
+
     return (
 
       	<div className="posts">
   
   			<div className="post banner">
 			    <h1 className="post-title">I build <em>scalable</em>, <em>maintainable</em> and <em>secure</em> enterprise web applications.</h1>
-    			<p>for <em>agencies</em>, <em>bluechips</em>, <em>start-ups</em> and sometimes, <em>myself</em>.</p>
+    			<p>for <em>agencies</em>, <em>bluechips</em>, <em>start-ups</em> and sometimes, <em>myself</em>. <a href="#" onClick={this.eventToggleSidebar}> Find out More</a></p>
 
 			</div>
-
   
 		  	<div className="post clearfix">
 
@@ -89,6 +100,8 @@ class Home extends Component {
 				</ul>
 
 			</div>
+
+			<Banner />
 
   		</div>
   

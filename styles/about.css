@@ -3,7 +3,8 @@
 	float:right;
 }
 
-.about {
+.about,
+.services {
 	width:50%;
 	float:left;
 	font-size:16px;}

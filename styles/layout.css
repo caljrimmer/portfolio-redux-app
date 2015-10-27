@@ -312,6 +312,18 @@ a.sidebar-nav-item:focus {
   margin-bottom: 6em;
 }
 
+.banner a {
+  border-bottom: 1px dotted #1db7a9;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+.banner a:hover,
+.banner a:active
+.banner a:visited {
+  border-bottom: 2px dotted #1db7a9;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
