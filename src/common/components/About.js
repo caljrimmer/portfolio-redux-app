@@ -42,7 +42,7 @@ class About extends Component {
 	      </div>
 
 	      <div className="repos">
-	      	<h3>My GitHub Repos</h3>
+	      	<h3><a href="https://github.com/caljrimmer?tab=repositories" target="_blank">My GitHub</a> Repos</h3>
 	        {isFetching && results.length === 0 &&
 	          	<Loader />
 	        }

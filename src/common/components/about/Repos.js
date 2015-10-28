@@ -6,7 +6,7 @@ export default class Repos extends Component {
       <div>
         {this.props.results.map((repo, i) =>
           <div className="repo-item" key={i}> 
-            <a href={repo.url}>{repo.name}</a><br/>
+            <a href={repo.html_url}>{repo.name}</a><br/>
             {repo.description}
           </div>
         )}
