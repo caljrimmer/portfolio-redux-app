@@ -5,7 +5,6 @@ class Home extends Component {
 
   constructor(props){
     super(props);
-    console.log(props)
     this.eventToggleSidebar = this.eventToggleSidebar.bind(this)
   }
 
