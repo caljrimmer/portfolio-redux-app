@@ -17,7 +17,7 @@ class Services extends Component {
       	  	<p>I can build you a prototype or a minimal viable product (MVP)for your idea. An MVP can validate your idea and help you raise funding.
       	  	</p> 
 
-      	  	<p>The code I deliver will be the best possible foundations from which your application adn idea can grow.</p>
+      	  	<p>The code I deliver will be the best possible foundations from which your application and idea can grow.</p>
 
 	      	<h3>Training</h3>
 
