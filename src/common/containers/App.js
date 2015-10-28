@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
 
-    const { layout } = this.props;
+    const { layout, toggleSidebar } = this.props;
     const { sidebarOpen } = layout;
     const layoutClass = classNames({open : sidebarOpen});
 
@@ -34,7 +34,7 @@ class App extends Component {
   	    <div className="wrap">
           <Header />
           <div className="container content">
-            {!this.props.children && <Home />}
+            {!this.props.children && <Home layout={layout} toggleSidebar={toggleSidebar} />}
             {this.props.children}
           </div>
         </div>
