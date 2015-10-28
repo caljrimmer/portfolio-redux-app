@@ -5,7 +5,6 @@ import Home from '../components/Home';
 import * as LayoutActions from '../actions/layout';
 
 function mapStateToProps(state) {
-	console.log(state)
   return {
     layout : state.layout
   }
