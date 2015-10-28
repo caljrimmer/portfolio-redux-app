@@ -7,3 +7,9 @@
 .services:last-child{
 	float:right;
 }
+
+@media (max-width: 40em) {
+	.services {
+		width:100%;
+	}
+}

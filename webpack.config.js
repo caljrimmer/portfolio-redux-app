@@ -1,8 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
+var merge = require('merge');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var webpackConfig = {
-  devtool: 'inline-source-map',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -39,33 +40,58 @@ var webpackConfig = {
         }
       }
     },
-    { test: /\.css$/, loader: 'style-loader!css-loader' },
-    { test: /\.(png|jpg|gif|jpeg)$/, loader: 'url-loader?limit=8192'}
+    { test: /\.(png|jpg|gif|jpeg)$/, loader: 'url-loader?limit=8192'},
+    { test: /\.css$/, loader: 'style-loader!css-loader' }
   ]}
 };
 
 if (process.env.NODE_ENV === 'production') {
-  
-  webpackConfig.entry = [
-    './src/client/index.js'
-  ]
-  
-  webpackConfig.plugins.unshift(new webpack.DefinePlugin({
-    'process.env': {
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV)
-    }
-  }));
 
-  webpackConfig.plugins.push(new webpack.optimize.UglifyJsPlugin());
+  webpackConfig = merge(webpackConfig,{
+    devtool: "source-map",
+    entry : [
+      './src/client/index.js'
+    ],
+    /*
+    modules : {
+      loaders: [
+        { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') }
+      ]
+    },
+    */
+    modules : {
+      loaders: [
+        { test: /\.css$/, loader: 'style-loader!css-loader' }
+      ]
+    },
+    plugins : [
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify('production')
+        }
+      }),
+      //new ExtractTextPlugin("app.css"),
+      new webpack.optimize.UglifyJsPlugin({minimize: true})
+    ]  
+  });
 
 }else{
 
-  webpackConfig.entry = [
-    'webpack-hot-middleware/client',
-    './src/client/index.js'
-  ]
-
-  webpackConfig.plugins.unshift(new webpack.HotModuleReplacementPlugin());
+  webpackConfig = merge(webpackConfig,{
+    devtool: 'inline-source-map',
+    modules : {
+      loaders: [
+        { test: /\.css$/, loader: 'style-loader!css-loader' }
+      ]
+    },
+    entry : [
+      'webpack-hot-middleware/client',
+      './src/client/index.js'
+    ],
+    plugins : [
+      new webpack.HotModuleReplacementPlugin()
+    ]  
+  });
   
 }
 

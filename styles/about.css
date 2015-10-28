@@ -21,3 +21,10 @@
 	margin-bottom:10px;
 	font-size:16px;
 }
+
+@media (max-width: 40em) {
+	.about,
+	.repos {
+		width:100%;
+	}
+}
