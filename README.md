@@ -2,6 +2,8 @@
 
 A Portfolio example of an isomorphic rendering application in React and Redux.
 
+<img src="http://g.recordit.co/cO0pqgO8Fo.gif" width="728" />
+
 ## Development Installation
 
 In the project's directory, run the following commands:
@@ -33,6 +35,10 @@ Then Visit
 ```
 http://localhost:3002
 ```
+
+## Other Boilerplate code
+
+[General Redux App (with Undo)](https://github.com/caljrimmer/isomorphic-redux-app)
 
 ## Credit
 
