@@ -30,7 +30,7 @@ class App extends Component {
 
     return (
       <div className={layoutClass}>
-        <Sidebar layout={layout} />
+        <Sidebar layout={layout} toggleSidebar={toggleSidebar} />
   	    <div className="wrap">
           <Header />
           <div className="container content">

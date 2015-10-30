@@ -4,8 +4,14 @@ import classNames from 'classnames';
 
 class Sidebar extends Component {
 
+
   constructor(props){
 	super(props);
+	this.eventCloseSidebar = this.eventCloseSidebar.bind(this)
+  }
+
+  eventCloseSidebar (e) {
+  	this.props.toggleSidebar(!this.props.layout.sidebarOpen);
   }
 
   render() {
@@ -19,10 +25,10 @@ class Sidebar extends Component {
 		  </div>
 
 		  <nav className="sidebar-nav">
-		    <Link to="/home" className="sidebar-nav-item" activeClassName="active">Home</Link>
-		    <Link to="/portfolio" className="sidebar-nav-item" activeClassName="active">My Portfolio</Link>
-		    <Link to="/services" className="sidebar-nav-item" activeClassName="active">My Services</Link>
-		    <Link to="/about" className="sidebar-nav-item" activeClassName="active">About</Link>
+		    <Link to="/home" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">Home</Link>
+		    <Link to="/portfolio" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Portfolio</Link>
+		    <Link to="/services" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Services</Link>
+		    <Link to="/about" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">About</Link>
 		  </nav>
 
 		  <div className="sidebar-item sidebar-footer">
