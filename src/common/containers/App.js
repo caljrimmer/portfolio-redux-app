@@ -6,40 +6,22 @@ import classNames from 'classnames';
 
 import * as LayoutActions from '../actions/layout';
 
-import Home from '../components/Home'
-import Header from '../components/layout/Header'
-import Sidebar from '../components/layout/Sidebar'
+import Game from '../components/Game'
 
 class App extends Component {
 
   constructor(props){
     super(props);
-    this.eventToggleSidebar = this.eventToggleSidebar.bind(this)
-  }
-
-  eventToggleSidebar(e) {
-    e.preventDefault();
-    this.props.toggleSidebar(!this.props.layout.sidebarOpen);
   }
 
   render() {
-
-    const { layout, toggleSidebar } = this.props;
-    const { sidebarOpen } = layout;
-    const layoutClass = classNames({open : sidebarOpen});
-
     return (
-      <div className={layoutClass}>
-        <Sidebar layout={layout} toggleSidebar={toggleSidebar} />
   	    <div className="wrap">
-          <Header />
           <div className="container content">
-            {!this.props.children && <Home layout={layout} toggleSidebar={toggleSidebar} />}
+            {!this.props.children && <Game />}
             {this.props.children}
           </div>
         </div>
-        <label className="sidebar-toggle" onClick={this.eventToggleSidebar}></label>
-      </div>
     );
   }
 }

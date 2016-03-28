@@ -1,0 +1,87 @@
+.controls {
+    width: 160px;
+    float: right;
+    background:#000;
+    position:absolute;
+    right:0;
+    opacity:0.5;
+}
+
+.controls ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.controls ul li {
+    font-size:11px;
+}
+
+.tile-list li {
+    clear:both;
+    height:30px;
+    margin-bottom:8px;
+    background: #1D1D1D;
+    border: 1px solid #1D1D1D;
+    padding: 8px;
+    color:rgba(255,255,255,0.8);
+}
+
+.tile-list li:hover {
+    color:rgba(255,255,255,1);
+    cursor:pointer;
+}
+
+.tile-list li.selected {
+    color:yellow;
+    border:1px solid yellow;
+}
+
+.tile-list .tile{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: -3px;
+}
+
+.tile-list .info{
+    height: 30px;
+    width: 118px;
+    float: left;
+}
+
+.tile-list .info h4 {
+    line-height: 0;
+    margin: 10px;
+    padding: 0;
+}
+
+.tile-list .info p {
+    line-height: 10px;
+    margin: 6px 10px 6px;
+}
+
+.backgrounds li,
+.assets li {
+    color:#fff;
+    width:50%;
+    float:left;
+    text-align:center;
+    line-height:30px;
+}
+
+.backgrounds li:hover,
+.assets li:hover {
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.backgrounds li:nth-child(1) {
+    background: yellow;
+    color:#000;
+}
+
+.assets li:nth-child(2) {
+    background: yellow;
+    color:#000;
+}

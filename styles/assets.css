@@ -1,0 +1,59 @@
+.assets {
+    width: 975px;
+    height: 743px;
+    position: absolute;
+    top: 20px;
+    left: 3px;
+    pointer-events: none;
+}
+
+.ship_war {
+    background:url(assets/playerShip3_red.png) no-repeat;
+     background-size:32px 24px;
+    width:32px;
+    height:24px;
+    background-position: center;
+    position:absolute;
+}
+
+.ship_scout {
+    background:url(assets/playerShip1_red.png) no-repeat;
+    background-size:28px 21px;
+    width:32px;
+    height:24px;
+    background-position: center;
+    position:absolute;
+}
+
+.ship_gun {
+    background:url(assets/playerShip2_red.png) no-repeat;
+    background-size:20px 15px;
+    width:32px;
+    height:24px;
+    background-position: center;
+    position:absolute;
+}
+
+.deg30 {
+    transform : rotate(30deg)
+}
+
+.deg90 {
+    transform : rotate(90deg)
+}
+
+.deg150 {
+    transform : rotate(150deg)
+}
+
+.deg210 {
+    transform : rotate(210deg)
+}
+
+.deg270 {
+    transform : rotate(270deg)
+}
+
+.deg330 {
+    transform : rotate(270deg)
+}

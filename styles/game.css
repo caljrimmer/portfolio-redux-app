@@ -1,0 +1,69 @@
+body {
+    margin:0;
+    background:#000;
+    font:normal 11px helvetica;
+}
+
+#game {
+    width: 1028px;
+    height: 768px;
+    overflow:hidden;
+    margin:auto;
+    position:relative;
+}
+
+.layers {
+    width:1028px;
+    background-image: -o-linear-gradient(bottom, #2E112E 0%, #361236 50%, #2E112E 100%);
+    background-image: -moz-linear-gradient(bottom, #2E112E 0%, #361236 50%, #2E112E 100%);
+    background-image: -webkit-linear-gradient(bottom, #2E112E 0%, #361236 50%, #2E112E 100%);
+    background-image: -ms-linear-gradient(bottom, #2E112E 0%, #361236 50%, #2E112E 100%);
+    background-image: linear-gradient(to bottom, #2E112E 0%, #361236 50%, #2E112E 100%);
+}
+
+.overlay {
+    fill: transparent;
+}
+
+/**
+* Space
+*/
+
+.hexagon {
+    fill: none;
+    opacity:1;
+    pointer-events: all;
+}
+
+.hexagon path {
+    -webkit-transition: fill 250ms linear;
+    transition: fill 250ms linear;
+}
+
+.hexagon :hover {
+    stroke-width: 2px;
+    stroke-dasharray: 2;
+    stroke:rgba(200,250,248,0.6);
+}
+
+.mesh {
+    fill: none;
+    stroke: white;
+    stroke-opacity: .1;
+    pointer-events: none;
+}
+
+.border {
+    fill: none;
+    stroke: rgba(255,255,255,0.4);
+    stroke-width: 2px;
+    pointer-events: none;
+}
+
+.out-of-bounds {
+    fill:#000;
+}
+
+.out-of-bounds:hover {
+    cursor:no-drop;
+}

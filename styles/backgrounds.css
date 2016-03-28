@@ -1,0 +1,84 @@
+/**
+* Tiles
+*/
+
+.cloud_1 {
+    animation: haze 10s infinite;
+    fill: #CE747F;
+}
+
+.cloud_2 {
+    animation: haze 10s infinite;
+    fill: #DB69CA;
+}
+
+.cloud_3 {
+    animation: haze 10s infinite;
+    fill: #C194D1;
+}
+
+.blackhole_1 {
+    fill: #000;
+    stroke-width:4px;
+    stroke:#fff;
+}
+
+.blackhole_2 {
+    fill: #000;
+    animation: haze 10s infinite;
+    opacity:0.55;
+}
+
+.blackhole_3 {
+    fill: #000;
+    animation: haze 10s infinite;
+    opacity:0.25;
+}
+
+.star_1 {
+    fill: #FFFF00;
+    opacity:1;
+    stroke:#F7B61E;
+    stroke-width:3px;
+}
+
+.star_2 {
+    fill: #38E9F2;
+    opacity:1;
+    stroke:#14AEB3;
+    stroke-width:3px;
+}
+
+.star_3 {
+    fill: #FF0000;
+    opacity:1;
+    stroke:#AD1515;
+    stroke-width:3px;
+}
+
+.rock_1 {
+    fill: #565C5B;
+    opacity:1;
+}
+
+.rock_2 {
+    fill: #8B8F8E;
+    opacity:1;
+}
+
+.rock_3 {
+    fill: #363636;
+    opacity:1;
+}
+
+@keyframes haze {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

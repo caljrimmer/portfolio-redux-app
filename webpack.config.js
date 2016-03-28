@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
         exclude: /node_modules/,
         include: __dirname
       },
-      { test: /\.(png|jpg|gif|jpeg)$/, loader: 'url-loader?limit=8192'},
+      { test: /\.(png|jpg|gif|jpeg|svg)$/, loader: 'url-loader?limit=8192'},
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap') }
     ]},
     plugins : [
@@ -74,7 +74,7 @@ if (process.env.NODE_ENV === 'production') {
           }
         }
       },
-      { test: /\.(png|jpg|gif|jpeg)$/, loader: 'url-loader?limit=8192'},
+      { test: /\.(png|jpg|gif|jpeg|svg)$/, loader: 'url-loader?limit=8192'},
       { test: /\.css$/, loader: 'style-loader!css-loader' }
     ]},
     entry : [
