@@ -4,6 +4,7 @@ import classNames from 'classnames';
 
 class Sidebar extends Component {
 
+
   constructor(props){
 	super(props);
 	this.eventCloseSidebar = this.eventCloseSidebar.bind(this)
@@ -20,7 +21,7 @@ class Sidebar extends Component {
     	<div className="sidebar">
 
 		  <div className="sidebar-item sidebar-footer">
-		    <p>An exercise in using React and Redux to build a 3-match mining game</p>
+		    <p>I built this site with Redux and React. You can get the <a href="https://github.com/caljrimmer/portfolio-redux-app">source code here</a></p>
 		  </div>
 
 		  <nav className="sidebar-nav">
@@ -36,6 +37,10 @@ class Sidebar extends Component {
 				Visit <a href="https://github.com/caljrimmer">My GitHub Repo</a><br/>
 				Visit <a href="https://www.linkedin.com/in/callumrimmer">My Linkedin</a><br/>
 				Visit <a href="https://twitter.com/caljrimmer">My Twitter</a><br/>
+		    </p>
+
+		    <p>
+		    	Design based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a> 
 		    </p>
 
 		  </div>

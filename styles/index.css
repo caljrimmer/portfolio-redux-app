@@ -1,5 +1,7 @@
-@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
-@import 'game.css';
-@import 'backgrounds.css';
-@import 'assets.css';
-@import 'controls.css';
+@import 'https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400';
+@import 'base.css';
+@import 'portfolio.css';
+@import 'about.css';
+@import 'services.css';
+@import 'layout.css';
+@import 'custom.css';
